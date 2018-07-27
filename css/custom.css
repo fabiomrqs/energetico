@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'bebas';
-  src: url('../font/bebas/BebasNeue-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../font/bebas/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../font/bebas/BebasNeue-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../font/bebas/BebasNeue-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/bebas/BebasNeue-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../font/bebas/BebasNeue-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-family: 'bebas';
+	src: url('../font/bebas/BebasNeue-Regular.eot'); /* IE9 Compat Modes */
+	src: url('../font/bebas/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../font/bebas/BebasNeue-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../font/bebas/BebasNeue-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+	url('../font/bebas/BebasNeue-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('../font/bebas/BebasNeue-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-  font-family: 'gloss';
-  src: url('../font/gloss/GlossAndBloom.eot'); /* IE9 Compat Modes */
-  src: url('../font/gloss/GlossAndBloom.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../font/gloss/GlossAndBloom.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../font/gloss/GlossAndBloom.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/gloss/GlossAndBloom.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../font/gloss/GlossAndBloom.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-family: 'gloss';
+	src: url('../font/gloss/GlossAndBloom.eot'); /* IE9 Compat Modes */
+	src: url('../font/gloss/GlossAndBloom.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../font/gloss/GlossAndBloom.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../font/gloss/GlossAndBloom.woff') format('woff'), /* Pretty Modern Browsers */
+	url('../font/gloss/GlossAndBloom.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('../font/gloss/GlossAndBloom.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 html, body {
@@ -34,13 +34,13 @@ a:hover {
 }
 
 textarea {
-  resize: none;
+	resize: none;
 }
 
 .active {
 	color: #ff0000 !important;
 	pointer-events: none !important;
-  cursor: default !important;
+	cursor: default !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -102,15 +102,22 @@ hr {
 }
 
 .gloss {
-font-family: gloss;
-/* Safari */
--webkit-transform: rotate(-2deg);
-/* Firefox */
--moz-transform: rotate(-2deg);
-/* IE */
--ms-transform: rotate(-2deg);
-/* Opera */
--o-transform: rotate(-2deg);
+	font-family: gloss;
+	/* Safari */
+	-webkit-transform: rotate(-2deg);
+	/* Firefox */
+	-moz-transform: rotate(-2deg);
+	/* IE */
+	-ms-transform: rotate(-2deg);
+	/* Opera */
+	-o-transform: rotate(-2deg);
+}
+
+.gloss:after {
+	content: url('../img/underline.png');
+	display: block;
+	transform: scale(.6);
+	margin-top: -0.3em;
 }
 
 .small {
@@ -217,6 +224,17 @@ footer {
 	color: #fff;
 }
 
+.social-icon {
+	display: inline;
+	margin: 5px;
+	width: 50px;
+	opacity: 0.6;
+}
+
+.social-icon:hover {
+	opacity: 1;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {} 
@@ -263,7 +281,7 @@ footer {
 		width: 300px;
 	}
 
-		.promotion-content {
+	.promotion-content {
 		margin-top: 9em;
 		margin-bottom: 0;
 	}
@@ -272,7 +290,7 @@ footer {
 		margin-bottom: 5em;
 	}
 
-			.partner-content {
+	.partner-content {
 		margin-top: 9em;
 		margin-bottom: 0;
 	}
