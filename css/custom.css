@@ -67,13 +67,11 @@ textarea {
 	text-transform: uppercase;
 	border-radius: 0px;
 	background-color: #ff0000;
-	width: 30%;
+	width: 60%;
 	color: #fff;
+	padding: 10px 20px;
 }
 
-.card .btn-custom {
-	width: 50%;
-}
 
 .card-footer {
 	background-color: #fff;
@@ -86,20 +84,6 @@ textarea {
 	color: #fff;
 }
 
-footer p {
-	line-height: 60%;
-}
-
-h1 {
-	font-size: 1.5em;
-}
-h2 {
-	font-size: 1em;
-}
-
-hr {
-	margin-bottom: 3em;
-}
 
 .gloss {
 	font-family: gloss;
@@ -132,6 +116,18 @@ hr {
 	font-size: 2.5em;
 }
 
+.small-top {
+	margin-top: 0.5em;
+}
+
+.small-bottom {
+	margin-bottom: 0.5em;
+}
+
+.large-bottom {
+	margin-bottom: 3em;
+}
+
 .img-cover {
 	background: url("../img/background.jpg") no-repeat center center; 
 	background-color: #000;
@@ -156,10 +152,14 @@ hr {
 
 
 .product-home {
-	padding: 0 0 3em 0;
 	background-color: #000;
 	color: #fff;
 }
+
+	.product-content img {
+		width: 300px;
+	}
+
 
 .place {
 	padding: 0 0 3em 0;
@@ -199,8 +199,6 @@ hr {
 	padding: 3em 0 3em 0;
 }
 
-
-
 .social-network img {
 	width: 100%;
 }
@@ -211,7 +209,7 @@ hr {
 	background: url("../img/promotion/promotion-background.jpg") no-repeat center center; 
 	background-size: cover;
 	margin: 0 auto;
-	height: 300px;
+	height: 400px;
 }
 
 .message .row {
@@ -219,10 +217,16 @@ hr {
 }
 
 footer {
-	padding: 7em;
+	padding-top: 9em;
+	height: 400px;
 	background-color: #000;
 	color: #fff;
 }
+
+footer p {
+	line-height: 100%;
+}
+
 
 .social-icon {
 	display: inline;
@@ -233,6 +237,11 @@ footer {
 
 .social-icon:hover {
 	opacity: 1;
+}
+
+.partner-img img {
+	height: 100px;
+	margin: 1em 2em 2em 2em;
 }
 
 
@@ -250,6 +259,21 @@ footer {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {	
+
+
+.btn-custom {
+	transition: background-color 0.5s ease;
+	text-transform: uppercase;
+	border-radius: 0px;
+	background-color: #ff0000;
+	width: 30%;
+	color: #fff;
+}
+
+.card .btn-custom {
+	width: 50%;
+}
+
 	.navbar {
 		padding-left: 15em;
 	}
