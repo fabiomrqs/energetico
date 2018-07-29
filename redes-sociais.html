@@ -8,6 +8,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
 
@@ -16,13 +17,17 @@
 </head>
 <body>
 
-		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
 		<a class="navbar-brand" href="index.html"><img src="img/logo-carabao.png"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav">
+			<ul class="navbar-nav text-center">
+				<li class="nav-item">
+					<a class="nav-link small" href="index.html">Home</a>
+				</li>
 				<li class="nav-item">
 					<a class="nav-link small" href="produto.html">Produtos</a>
 				</li>
@@ -46,32 +51,69 @@
 	</nav>
 
 
-	<section class="jumbotron">
+	<section class="jumbotron jumbotron-social">
 		<div class="container">
 			<div class='row text-center'>
 				<div class="col-lg-10 offset-lg-1">
-					<img  src="img/cover-product.jpg" class='hero-img'>
+					<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400"><img  src="img/cover-social.jpg" class='hero-img'></div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class='product-content'>
+	<section class='social-content large-bottom'>
 		<div class='container'>
 			<div class='row text-center'>
 				<div class='col-lg-10 offset-lg-1'>
-					<h1 class='large gloss small-top'>Redes Sociais</h1>
-					<p class='medium'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ipsum hendrerit, fringilla ante quis, consectetur libero. Suspendisse odio leo, vulputate nec elit in, laoreet molestie magna.</p>
+					<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" class='d-none d-lg-block d-xl-block'><h1 class='large gloss small-top color-title'>Redes Sociais</h1></div>
+					<h1 class='large gloss small-top color-title d-sm-block d-mg-block d-lg-none d-xl-none'>Redes Sociais</h1>
+					<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400"><p class='medium'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ipsum hendrerit, fringilla ante quis, consectetur libero. Suspendisse odio leo, vulputate nec elit in, laoreet molestie magna.</p></div>
 				</div>
 			</div>
 			<div class='row text-center'>
 				<div class='col-lg-10 offset-lg-1'>
-
+					<div class='row medium-top'>
+						<div class='col-lg-10 offset-lg-1'>
+							<div class="card-columns">
+								<a href="">
+								<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" class="card">
+										<img class="card-img-top" src="img/social/social-1.jpg" alt="Card image cap">
+									</div>
+								</a>
+								<a href="">
+								<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" class="card">
+										<img class="card-img-top" src="img/social/social-2.jpg" alt="Card image cap">
+									</div>
+								</a>
+								<a href="">
+								<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" class="card">
+										<img class="card-img-top" src="img/social/social-3.jpg" alt="Card image cap">
+									</div>
+								</a>
+								<a class='d-none d-lg-block d-xl-block' href="">
+								<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" class="card">
+										<img class="card-img-top" src="img/social/social-4.jpg" alt="Card image cap">
+									</div>
+								</a>
+								<a class='d-none d-lg-block d-xl-block'  href="">
+								<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" class="card">
+										<img class="card-img-top" src="img/social/social-5.jpg" alt="Card image cap">
+									</div>
+								</a>
+								<a class='d-none d-lg-block d-xl-block'  href="">
+								<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" class="card">
+										<img class="card-img-top" src="img/social/social-6.jpg" alt="Card image cap">
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-				
+
 		</div>
 	</section>
+
 
 
 	<footer>
@@ -87,7 +129,7 @@
 					<p><a href="#" class='small'>Redes Sociais</a></p>
 					<p><a href="#" class='small'>Contato</a></p>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 medium-top">
 					<a href="#" target="_blank"><img class='social-icon' src="img/facebook.png"></a>
 					<a href="#" target="_blank"><img class='social-icon' src="img/instagram.png"></a>
 					<a href="#" target="_blank"><img class='social-icon' src="img/twitter.png"></a>
@@ -100,12 +142,17 @@
 
 
 
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src='js/custom.js'></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
 </body>
 </html>

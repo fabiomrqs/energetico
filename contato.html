@@ -8,6 +8,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
 
@@ -22,7 +23,10 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav">
+			<ul class="navbar-nav text-center">
+				<li class="nav-item">
+					<a class="nav-link small" href="index.html">Home</a>
+				</li>
 				<li class="nav-item">
 					<a class="nav-link small" href="produto.html">Produtos</a>
 				</li>
@@ -46,27 +50,28 @@
 	</nav>
 
 
-	<section class="jumbotron">
+	<section class="jumbotron jumbotron-message">
 		<div class="container">
 			<div class='row text-center'>
 				<div class="col-lg-10 offset-lg-1">
-					<img  src="img/cover-product.jpg" class='hero-img'>
+					<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400"><img  src="img/cover-message.jpg" class='hero-img'></div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class='product-content'>
+	<section class='message-content large-bottom'>
 		<div class='container'>
 			<div class='row text-center'>
 				<div class='col-lg-10 offset-lg-1'>
-					<h1 class='large gloss small-top'>Contato</h1>
-					<p class='medium'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ipsum hendrerit, fringilla ante quis, consectetur libero. Suspendisse odio leo, vulputate nec elit in, laoreet molestie magna.</p>
+					<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" class='d-none d-lg-block d-xl-block'><h1 class='large gloss small-top color-title'>COntato</h1></div>
+					<h1 class='large gloss small-top color-title d-sm-block d-mg-block d-lg-none d-xl-none'>COntato</h1>
+					<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400"><p class='medium'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ipsum hendrerit, fringilla ante quis, consectetur libero. Suspendisse odio leo, vulputate nec elit in, laoreet molestie magna.</p></div>
 				</div>
 			</div>
 			<div class='row'>
 				<div class='col-lg-6 offset-lg-3'>
-					<form>
+					<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400"><form>
 						<div class="form-group">
 							<label for="exampleInputEmail1">Nome</label>
 							<input type="text" class="form-control">
@@ -94,11 +99,12 @@
 						<center>
 							<button type="submit" class="btn btn-custom medium">Enviar</button>
 						</center>
-					</form>
+					</form></div>
 				</div>
 			</div>	
 		</div>
 	</section>
+
 
 
 	<footer>
@@ -114,7 +120,7 @@
 					<p><a href="#" class='small'>Redes Sociais</a></p>
 					<p><a href="#" class='small'>Contato</a></p>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 medium-top">
 					<a href="#" target="_blank"><img class='social-icon' src="img/facebook.png"></a>
 					<a href="#" target="_blank"><img class='social-icon' src="img/instagram.png"></a>
 					<a href="#" target="_blank"><img class='social-icon' src="img/twitter.png"></a>
@@ -124,12 +130,17 @@
 	</footer>
 
 
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src='js/custom.js'></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  		AOS.init();
+	</script>
 
 </body>
 </html>

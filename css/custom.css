@@ -24,17 +24,57 @@ html, body {
 	color: #000;
 }
 
+.btn, button, .navbar-toggler, .navbar {
+	outline: none;
+	border:1px solid transparent !important;
+	box-shadow:none !important;
+}
+
+input, textarea {
+	outline: none;
+	border:1px solid #ccc !important;
+	box-shadow:none !important;
+}
+
+
+
 a {
-	color: #fff;
+	color: #fff !important;
 }
 
 a:hover {
-	color: #ff0000;
+	color: #ff0000 !important;
 	text-decoration: none;
 }
 
 textarea {
 	resize: none;
+}
+
+.social-content, .product-content, .promotion-content, .message-content, .partner-content {
+	margin-top: -6em;
+}
+
+
+.store-content {
+	margin-top: -8.5em;
+}
+
+.color-title {
+	color: #fff !important;
+}
+
+.product-content hr {
+	margin: 0 0 1.5em 0;
+}
+
+.store-list hr {
+	margin: 1.5em 0 1.5em 0;
+}
+
+h1, h2, p {
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 .active {
@@ -61,6 +101,13 @@ textarea {
 	margin-bottom: 0.2em;
 }
 
+.navbar-dark .navbar-toggler {
+	border-color: #000000;
+}
+
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
 
 .btn-custom {
 	transition: background-color 0.5s ease;
@@ -71,6 +118,7 @@ textarea {
 	color: #fff;
 	padding: 10px 20px;
 }
+
 
 
 .card-footer {
@@ -87,63 +135,96 @@ textarea {
 
 .gloss {
 	font-family: gloss;
-	/* Safari */
 	-webkit-transform: rotate(-2deg);
-	/* Firefox */
 	-moz-transform: rotate(-2deg);
-	/* IE */
 	-ms-transform: rotate(-2deg);
-	/* Opera */
 	-o-transform: rotate(-2deg);
 }
 
 .gloss:after {
 	content: url('../img/underline.png');
 	display: block;
-	transform: scale(.6);
+	transform: scale(.4);
 	margin-top: -0.3em;
+	margin-right: 2em;
 }
 
 .small {
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 .medium {
-	font-size: 1.3em;
+	font-size: 1em;
 }
 
 .large {
-	font-size: 2.5em;
+	font-size: 1.8em;
 }
 
 .small-top {
-	margin-top: 0.5em;
+	margin-top: 0.5em !important;
+}
+
+.medium-top {
+	margin-top: 1.5em !important;
 }
 
 .small-bottom {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5em !important;
+}
+
+.medium-bottom {
+	margin-bottom: 1.5em !important;
 }
 
 .large-bottom {
-	margin-bottom: 3em;
+	margin-bottom: 3em !important;
 }
 
 .img-cover {
-	background: url("../img/background.jpg") no-repeat center center; 
-	background-color: #000;
-	background-size: contain;
-	margin: 0 auto;
-	height: 600px;
+	border-radius: 0 !important;
+	height: 350px !important;
+	margin-top: 5em;
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/background.jpg") no-repeat center center; 
+	background-size: cover;
 }
 
 
 .jumbotron {
-	background: linear-gradient(transparent, rgba(0,0,0,0.6)), url("../img/background.jpg") no-repeat center center fixed; 
-	background-size: cover;
 	border-radius: 0 !important;
-	height: 350px !important;
+	height: 200px !important;
+	margin-top: 5em;
 }
 
+.jumbotron-promotion {
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-promotion.jpg") no-repeat center center; 
+	background-size: cover;
+}
+
+.jumbotron-message {
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-message.jpg") no-repeat center center; 
+	background-size: cover;
+}
+
+.jumbotron-social {
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-social.jpg") no-repeat center center; 
+	background-size: cover;
+}
+
+.jumbotron-partner {
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-partner.jpg") no-repeat center center; 
+	background-size: cover;
+}
+
+.jumbotron-product {
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-product.jpg") no-repeat center center; 
+	background-size: cover;
+}
+
+.jumbotron-store {
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-store.jpg") no-repeat center center; 
+	background-size: cover;
+}
 
 .hero-img {
 	display: none;
@@ -156,9 +237,9 @@ textarea {
 	color: #fff;
 }
 
-	.product-content img {
-		width: 300px;
-	}
+.product-content img {
+	width: 200px;
+}
 
 
 .place {
@@ -181,7 +262,7 @@ textarea {
 }
 
 .partner img {
-	height: 150px;
+	height: 120px;
 	margin: 1em 2em 2em 2em;
 }
 
@@ -217,15 +298,13 @@ textarea {
 }
 
 footer {
-	padding-top: 9em;
+	padding-top: 5em;
 	height: 400px;
 	background-color: #000;
 	color: #fff;
 }
 
-footer p {
-	line-height: 100%;
-}
+
 
 
 .social-icon {
@@ -242,6 +321,10 @@ footer p {
 .partner-img img {
 	height: 100px;
 	margin: 1em 2em 2em 2em;
+}
+
+.hero-text {
+	margin-top: -3em;
 }
 
 
@@ -261,18 +344,39 @@ footer p {
 @media only screen and (min-width: 1200px) {	
 
 
-.btn-custom {
-	transition: background-color 0.5s ease;
-	text-transform: uppercase;
-	border-radius: 0px;
-	background-color: #ff0000;
-	width: 30%;
-	color: #fff;
+.img-cover {
+	height: 650px !important;
 }
 
-.card .btn-custom {
-	width: 50%;
+.hero-text {
+	margin-top: -5em;
 }
+
+.small {
+	font-size: 1.1em;
+}
+
+.medium {
+	font-size: 1.3em;
+}
+
+.large {
+	font-size: 2.5em;
+}
+
+
+	.btn-custom {
+		transition: background-color 0.5s ease;
+		text-transform: uppercase;
+		border-radius: 0px;
+		background-color: #ff0000;
+		width: 30%;
+		color: #fff;
+	}
+
+	.card .btn-custom {
+		width: 80%;
+	}
 
 	.navbar {
 		padding-left: 15em;
@@ -294,6 +398,7 @@ footer p {
 		background-size: cover;
 		border-radius: 0 !important;
 		height: 350px !important;
+		margin-top: 2em;
 	}
 
 	.product-content {
@@ -318,6 +423,50 @@ footer p {
 		margin-top: 9em;
 		margin-bottom: 0;
 	}
+
+	.social-content {
+		margin-top: 9em;
+		margin-bottom: 0;
+	}
+
+	.message-content {
+		margin-top: 9em;
+		margin-bottom: 0;
+	}
+
+		.store-content {
+		margin-top: 9em;
+		margin-bottom: 0;
+	}
+
+
+
+
+	.partner img {
+	height: 150px;
+	margin: 1em 2em 2em 2em;
+}
+
+	footer {
+		padding-top: 9em;
+	}
+
+	.carousel-caption {
+	top: 15em;
+}
+
+.color-title {
+	color: #000000 !important;
+}
+
+.gloss:after {
+	content: url('../img/underline.png');
+	display: block;
+	transform: scale(.6);
+	margin-top: -0.3em;
+	margin-right:0;
+}
+
 
 
 }
