@@ -47,6 +47,12 @@ a:hover {
 	text-decoration: none;
 }
 
+.active {
+	color: #ff0000 !important;
+	pointer-events: none !important;
+	cursor: default !important;
+}
+
 textarea {
 	resize: none;
 }
@@ -57,10 +63,7 @@ h1, h2, p {
 }
 
 
-
-
 /* Navbar */
-
 .navbar-dark .navbar-nav .nav-link {
 	color: #fff;
 }
@@ -89,7 +92,6 @@ h1, h2, p {
 
 
 /* Font Size */
-
 .small {
 	font-size: 1em;
 }
@@ -104,13 +106,16 @@ h1, h2, p {
 
 
 /* Spacing */
-
 .small-top {
 	margin-top: 0.5em !important;
 }
 
 .medium-top {
 	margin-top: 1.5em !important;
+}
+
+.large-top {
+	margin-top: 3em !important;
 }
 
 .small-bottom {
@@ -127,7 +132,6 @@ h1, h2, p {
 
 
 /* Button */
-
 .btn-custom {
 	transition: background-color 0.5s ease;
 	text-transform: uppercase;
@@ -138,14 +142,12 @@ h1, h2, p {
 	padding: 10px 20px;
 }
 
-
 .btn-custom:hover {
 	transition: background-color 0.5s ease;
 	text-transform: uppercase;
 	background-color: #d20000;
 	color: #fff;
 }
-
 
 .social-button {
 	display: inline;
@@ -160,7 +162,6 @@ h1, h2, p {
 
 
 /* Owl Carousel */
-
 .owl-carousel .active {
 	color: #ffffff !important;
 }
@@ -172,9 +173,7 @@ h1, h2, p {
 }
 
 
-
 /* Title */
-
 .gloss {
 	font-family: gloss;
 	-webkit-transform: rotate(-2deg);
@@ -193,7 +192,6 @@ h1, h2, p {
 
 
 /* Home */
-
 .home-cover{
 	border-radius: 0 !important;
 	height: 350px !important;
@@ -240,7 +238,6 @@ h1, h2, p {
 	width: 100%;
 }
 
-
 .home-message {
 	text-shadow: 0 0 30px #000000;
 	color: #fff;
@@ -255,64 +252,14 @@ h1, h2, p {
 }
 
 
-
 /* Sections */
-
 .social-content, .product-content, .promotion-content, .message-content, .partner-content {
 	margin-top: -6em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.store-content {
-	margin-top: -8.5em;
+.section-cover {
+	display: none;
 }
-
-.color-title {
-	color: #fff !important;
-}
-
-.product-content hr {
-	margin: 0 0 1.5em 0;
-}
-
-.store-list hr {
-	margin: 1.5em 0 1.5em 0;
-}
-
-
-.active {
-	color: #ff0000 !important;
-	pointer-events: none !important;
-	cursor: default !important;
-}
-
-
-
-.card-footer {
-	background-color: #fff;
-}
-
-
-
 
 .jumbotron {
 	border-radius: 0 !important;
@@ -320,77 +267,82 @@ h1, h2, p {
 	margin-top: 5em;
 }
 
-.jumbotron-promotion {
-	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-promotion.jpg") no-repeat center center; 
-	background-size: cover;
+.color-title {
+	color: #fff !important;
 }
 
-.jumbotron-message {
-	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-message.jpg") no-repeat center center; 
-	background-size: cover;
-}
-
-.jumbotron-social {
-	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-social.jpg") no-repeat center center; 
-	background-size: cover;
-}
-
-.jumbotron-partner {
-	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-partner.jpg") no-repeat center center; 
-	background-size: cover;
-}
-
+/* Product Section */
 .jumbotron-product {
 	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-product.jpg") no-repeat center center; 
 	background-size: cover;
 }
 
-.jumbotron-store {
-	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-store.jpg") no-repeat center center; 
-	background-size: cover;
+.product-content hr {
+	margin: 0 0 1.5em 0;
 }
-
-.hero-img {
-	display: none;
-}
-
-
-
-
 
 .product-content img {
 	width: 200px;
 }
 
 
-.promotion {
-	text-shadow: 0 0 30px #000000;
-	color: #fff;
-	background: url("../img/promotion/promotion-background.jpg") no-repeat center center; 
+/* Store */
+.jumbotron-store {
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-store.jpg") no-repeat center center; 
 	background-size: cover;
-	margin: 0 auto;
-	height: 450px;
+}
+.store-content {
+	margin-top: -8.5em;
+}
+
+.store-list hr {
+	margin: 1.5em 0 1.5em 0;
 }
 
 
+/* Partner */
+.jumbotron-partner {
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-partner.jpg") no-repeat center center; 
+	background-size: cover;
+}
 
+.partner-content img {
+	height: 100px;
+	margin: 1em 2em 2em 2em;
+}
+
+
+/* Promotion */
+.jumbotron-promotion {
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-promotion.jpg") no-repeat center center; 
+	background-size: cover;
+}
+
+.card-footer {
+	background-color: #fff;
+}
+
+/* Social */
+.jumbotron-social {
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-social.jpg") no-repeat center center; 
+	background-size: cover;
+}
+
+
+/* Message */
+.jumbotron-message {
+	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/cover-message.jpg") no-repeat center center; 
+	background-size: cover;
+}
+
+
+/* Footer */
 footer {
 	padding-top: 5em;
 	height: 400px;
 	background-color: #000;
 	color: #fff;
 }
-
-
-
-
-.partner-img img {
-	height: 100px;
-	margin: 1em 2em 2em 2em;
-}
-
-
-
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -407,12 +359,7 @@ footer {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {	
-
-
-
-
 	/* Font size */
-
 	.small {
 		font-size: 1.1em;
 	}
@@ -427,7 +374,6 @@ footer {
 
 
 	/* Title */
-
 	.gloss:after {
 		transform: scale(.6);
 		margin-top: -0.3em;
@@ -435,9 +381,7 @@ footer {
 	}
 
 
-
 	/* Buttons */
-
 	.btn-custom {
 		transition: background-color 0.5s ease;
 		text-transform: uppercase;
@@ -449,7 +393,6 @@ footer {
 
 
 	/* Navbar */
-
 	.navbar {
 		padding-left: 15em;
 	}
@@ -460,7 +403,6 @@ footer {
 
 
 	/* Home */
-
 	.home-cover{
 		height: 650px !important;
 	}
@@ -475,27 +417,8 @@ footer {
 	}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	.card .btn-custom {
-		width: 80%;
-	}
-
-
-
-	.hero-img {
+	/* Sections */
+	.section-cover {
 		width: 100%;
 		height: 350px;
 		margin-top: 3em;
@@ -510,6 +433,12 @@ footer {
 		margin-top: 2em;
 	}
 
+	.color-title {
+		color: #000000 !important;
+	}
+
+
+	/* Product */
 	.product-content {
 		margin-top: 9em;
 		margin-bottom: 9em;
@@ -519,52 +448,49 @@ footer {
 		width: 300px;
 	}
 
-	.promotion-content {
-		margin-top: 9em;
-		margin-bottom: 0;
-	}
 
-	.promotion-cards {
-		margin-bottom: 5em;
-	}
-
-	.partner-content {
-		margin-top: 9em;
-		margin-bottom: 0;
-	}
-
-	.social-content {
-		margin-top: 9em;
-		margin-bottom: 0;
-	}
-
-	.message-content {
-		margin-top: 9em;
-		margin-bottom: 0;
-	}
-
+	/* Store */
 	.store-content {
 		margin-top: 9em;
 		margin-bottom: 0;
 	}
 
 
+	/* Partner */
+	.partner-content {
+		margin-top: 9em;
+		margin-bottom: 0;
+	}
 
 
+	/* Promotion */
+	.promotion-content {
+		margin-top: 9em;
+		margin-bottom: 0;
+	}
+
+	.card .btn-custom {
+		width: 80%;
+	}
 
 
+	/* Social */
+	.social-content {
+		margin-top: 9em;
+		margin-bottom: 0;
+	}
 
 
+	/* Message */
+	.message-content {
+		margin-top: 9em;
+		margin-bottom: 0;
+	}
 
 
+	/* Footer */
 	footer {
 		padding-top: 9em;
 	}
-
-	.color-title {
-		color: #000000 !important;
-	}
-
-
 
 }
