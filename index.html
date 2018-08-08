@@ -33,7 +33,6 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
@@ -148,7 +147,7 @@
 
 
 
-	<div id="owl-demo" class="owl-carousel owl-theme">
+	<div class="owl-carousel owl-theme">
 		<div class="item owl-content" style='background: url(img/home/promo.jpg); background-size: cover;'>
 			<div class='row text-center'>
 				<div class="col-lg-8 offset-lg-2">
@@ -284,6 +283,13 @@
 			autoplayTimeout:3000,
 			autoplayHoverPause:true
 		});
+
+$( ".owl-carousel" ).on("click touch", function() {
+	window.location.href = 'promocoes.html';
+});
+
+
+
 	</script>
 </body>
 </html>
