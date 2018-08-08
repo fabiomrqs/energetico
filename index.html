@@ -33,8 +33,9 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
 
@@ -134,17 +135,17 @@
 				<div class="col-lg-10 offset-lg-1">
 					<hr>
 					<div data-aos="fade-up"><h2 class='large small-top small-bottom'>Parceiros</h2></div>
-					<img data-aos="zoom-in-up" src="img/partner/logos/parceiro-1.png">
-					<img data-aos="zoom-in-up" src="img/partner/logos/parceiro-2.png">
-					<img data-aos="zoom-in-up" src="img/partner/logos/parceiro-3.png">
-					<img data-aos="zoom-in-up" src="img/partner/logos/parceiro-1.png">
-					<img data-aos="zoom-in-up" src="img/partner/logos/parceiro-2.png">
+					<img data-aos="zoom-in-up" src="img/partner/logos/parceiro-1.png"><br class='d-sm-block d-md-block d-lg-none d-xl-none'>
+					<img data-aos="zoom-in-up" src="img/partner/logos/parceiro-2.png"><br class='d-sm-block d-md-block d-lg-none d-xl-none'>
+					<img data-aos="zoom-in-up" src="img/partner/logos/parceiro-3.png"><br class='d-sm-block d-md-block d-lg-none d-xl-none'>
+					<img data-aos="zoom-in-up" src="img/partner/logos/parceiro-1.png"><br class='d-sm-block d-md-block d-lg-none d-xl-none'>
+					<img data-aos="zoom-in-up" src="img/partner/logos/parceiro-2.png"><br class='d-sm-block d-md-block d-lg-none d-xl-none'>
 					<hr>
 				</div>
 			</div>
 		</div>
 	</section>
-
+<!--
 
 
 	<div class="owl-carousel owl-theme">
@@ -177,9 +178,41 @@
 		</div>
 	</div>
 
+-->
 
 
-	<section class="home-social small-bottom medium-top">
+<div class="slick-car">
+		<div class="slick-content" style='background: url(img/home/promo.jpg); background-size: cover;'>
+			<div class='row text-center'>
+				<div class="col-lg-8 offset-lg-2">
+					<h2 class='large gloss animated'>Promoção</h2>
+					<p class='medium animated'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ipsum hendrerit, fringilla ante quis, consectetur libero. Suspendisse odio leo, vulputate nec elit in, laoreet molestie magna.</p>
+					<a href="#"><button class='btn btn-custom medium small-top'>Participar</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="slick-content" style='background: url(img/home/promo.jpg); background-size: cover;'>
+			<div class='row text-center'>
+				<div class="col-lg-8 offset-lg-2">
+					<h2 class='large gloss animated'>Promoção</h2>
+					<p class='medium animated'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ipsum hendrerit, fringilla ante quis, consectetur libero. Suspendisse odio leo, vulputate nec elit in, laoreet molestie magna.</p>
+					<a href="#"><button class='btn btn-custom medium small-top'>Participar</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="slick-content" style='background: url(img/home/promo.jpg); background-size: cover;'>
+			<div class='row text-center'>
+				<div class="col-lg-8 offset-lg-2">
+					<h2 class='large gloss animated'>Promoção</h2>
+					<p class='medium animated'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ipsum hendrerit, fringilla ante quis, consectetur libero. Suspendisse odio leo, vulputate nec elit in, laoreet molestie magna.</p>
+					<a href="#"><button class='btn btn-custom medium small-top'>Participar</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<section class="home-social small-bottom large-top">
 		<div class="container">
 			<div class='row text-center'>
 				<div class="col-lg-10 offset-lg-1">
@@ -239,6 +272,7 @@
 	</section>
 
 
+
 	<footer>
 		<div class="container">
 			<div class='row text-center text-lg-left'>
@@ -270,11 +304,18 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src='js/custom.js'></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="slick/slick.js"></script>
+
 	<script>
 		AOS.init();
 
+		$('.slick-car').slick({
+			dots: true,
+  autoplay: true,
+  autoplaySpeed: 2000
+		});
 
+/*
 		$('.owl-carousel').owlCarousel({
 			items:1,
 			margin:10,
@@ -286,7 +327,7 @@
 
 $( ".owl-carousel" ).on("click touch", function() {
 	window.location.href = 'promocoes.html';
-});
+});*/
 
 
 

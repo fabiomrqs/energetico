@@ -161,12 +161,12 @@ h1, h2, p {
 }
 
 
-/* Owl Carousel */
-.owl-carousel .active {
+/* Slick Carousel */
+.slick-car {
 	color: #ffffff !important;
 }
 
-.owl-content {
+.slick-content{
 	padding-top: 5em;
 	padding-bottom: 5em;
 	background-color: #000000;
