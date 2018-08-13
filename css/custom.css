@@ -77,7 +77,7 @@ h1, h2, p {
 }
 
 .navbar-brand img {
-	height: 3em;
+	height: 2em;
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
 }
@@ -196,7 +196,7 @@ h1, h2, p {
 .home-cover{
 	border-radius: 0 !important;
 	height: 350px !important;
-	margin-top: 5em;
+	margin-top: 3em;
 	background: linear-gradient(transparent, rgba(0,0,0,1)), url("../img/home/cover.jpg") no-repeat center center; 
 	background-size: cover;
 }
