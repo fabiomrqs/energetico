@@ -176,6 +176,7 @@ h1, h2, p {
 /* Title */
 .gloss {
 	font-family: gloss;
+	line-height: 1.7em;
 	-webkit-transform: rotate(-2deg);
 	-moz-transform: rotate(-2deg);
 	-ms-transform: rotate(-2deg);
