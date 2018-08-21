@@ -239,7 +239,7 @@ h1, h2, p {
 }
 
 .home-partner {
-	padding: 3em 0 3em 0;
+	padding: 3em 0 0 0;
 }
 
 .home-partner img {
@@ -528,11 +528,7 @@ footer {
 		margin-bottom: 0;
 	}
 
-.item img {
-	height: auto;
-	width: auto;
-	object-fit: contain;
-}
+
 
 
 	/* Footer */
