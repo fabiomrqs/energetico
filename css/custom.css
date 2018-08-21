@@ -24,6 +24,19 @@ html, body {
 	color: #000;
 }
 
+.item {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* remove glow */
 .btn, button, .navbar-toggler, .navbar {
 	outline: none;
@@ -49,7 +62,6 @@ a:hover {
 
 .active {
 	color: #ff0000 !important;
-	pointer-events: none !important;
 	cursor: default !important;
 }
 
@@ -359,6 +371,11 @@ h1, h2, p {
   color: #000000;
 }
 
+.item img {
+	height: 350px;
+	width: auto;
+	object-fit: cover;
+}
 
 /* Footer */
 footer {
@@ -510,6 +527,12 @@ footer {
 		margin-top: 9em;
 		margin-bottom: 0;
 	}
+
+.item img {
+	height: auto;
+	width: auto;
+	object-fit: contain;
+}
 
 
 	/* Footer */
